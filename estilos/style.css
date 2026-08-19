@@ -17,3 +17,22 @@ main {
     box-shadow: 0 8px 24px oklab(0.30 -0.01 -0.03 / 0.06);
     border-radius: 12px;
 }
+
+.video-responsivo {
+    width: 100%;
+    /* O vídeo vai ocupar toda a largura do elemento pai */
+    max-width: 800px;
+    /* Define um tamanho máximo para não ficar gigante em telas grandes */
+    aspect-ratio: 16 / 9;
+    /* Calcula a altura automaticamente mantendo a proporção correta */
+    height: auto;
+    /* Garante que a altura respeite o aspect-ratio */
+    display: block;
+    /* Remove pequenos espaços em branco abaixo do iframe */
+    margin: 0 auto;
+    /* Centraliza o vídeo na página */
+}
+
+img.lado {
+    float: right;
+}
