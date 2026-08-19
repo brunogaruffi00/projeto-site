@@ -19,19 +19,25 @@ main {
 }
 
 .video-responsivo {
-    width: 100%;
-    /* O vídeo vai ocupar toda a largura do elemento pai */
-    max-width: 800px;
-    /* Define um tamanho máximo para não ficar gigante em telas grandes */
-    aspect-ratio: 16 / 9;
-    /* Calcula a altura automaticamente mantendo a proporção correta */
-    height: auto;
-    /* Garante que a altura respeite o aspect-ratio */
+    /* Altera o comportamento do iframe para um bloco elástico no fluxo da página */
     display: block;
-    /* Remove pequenos espaços em branco abaixo do iframe */
-    margin: 0 auto;
-    /* Centraliza o vídeo na página */
+
+    /* Propriedade lógica oficial da W3C para largura: faz o vídeo preencher 
+     automaticamente todo o espaço disponível dentro do seu cartão atual */
+    inline-size: 100%;
+
+    /* Define a proporção intrínseca padrão de vídeo (16:9) para que a 
+     altura seja calculada de forma exata pelo navegador, sem distorcer */
+    aspect-ratio: 16 / 9;
+
+    /* Garante que a altura respeite estritamente a proporção definida acima */
+    height: auto;
+
+    /* Zera as bordas padrão do elemento */
+    border: 0;
 }
+
+
 
 img.lado {
     float: right;
