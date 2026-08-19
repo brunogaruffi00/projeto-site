@@ -1,0 +1,17 @@
+@charset "utf8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+body {
+    background-color:oklab(88% 0.02 -0.04) ;
+}
+main {
+    background-color: oklab(97.3% -0.003 -0.004);
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    box-shadow:0 8px 24px oklab(0.30 -0.01 -0.03 / 0.06);
+    border-radius:12px ;
+}
